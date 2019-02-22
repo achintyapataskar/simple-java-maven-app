@@ -6,7 +6,10 @@ pipeline {
             args '-v /root/.m2:/root/.m2' 
         }
     }*/
-		agent mvn
+		agent any
+		tools {
+			maven 'Maven 3.5.2'
+		}
     stages {
         stage('Build') { 
             steps {
