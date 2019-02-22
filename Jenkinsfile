@@ -6,7 +6,7 @@ pipeline {
             args '-v /root/.m2:/root/.m2' 
         }
     }*/
-		agent any
+		agent mvn
     stages {
         stage('Build') { 
             steps {
